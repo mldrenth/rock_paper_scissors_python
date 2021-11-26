@@ -7,6 +7,10 @@ from models.player import Player
 def index():
     return render_template('index.html', title = "Home")
 
+@app.route('/play')
+def play():
+    return render_template('play_against_computer.html', title = "Play against Computer")
+
 @app.route('/<choice_1>/<choice_2>')
 def play_round(choice_1,choice_2):
     player_1 = Player("Player 1", choice_1)

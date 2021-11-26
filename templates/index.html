@@ -1,8 +1,16 @@
-<html>
-    <head>
-        <title>{title} -- Rock - Paper - Scissors</title>
-    </head>
-    <body>
-        <p>This works!</p>
-    </body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Rock, Paper, Scissors</h1>
+<h2>Rules</h2>
+<p>On the count of three, each player chooses from the folowing: 
+<ul>
+    <li>Rock</li>
+    <li>Paper</li>
+    <li>Scissors</li>
+</ul>
+Rock beats Scissors, Paper beats Rock and Scissors beat Paper.
+
+</p>
+
+{% endblock content %}

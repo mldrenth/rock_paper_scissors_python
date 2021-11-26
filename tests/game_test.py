@@ -38,3 +38,7 @@ class TestGame(unittest.TestCase):
     def test_game_return_none_on_tie(self):
         result = self.game.play_game(self.player_rock, self.player_rock)
         self.assertEqual(None, result)
+    
+    def test_game_can_create_computer_player(self):
+        result = self.game.create_computer_player()
+        self.assertIn(result.choice,["rock", "paper", "scissors"])
