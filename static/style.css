@@ -1,5 +1,9 @@
 body {
-    background-color: #F2EEEB
+    background-color: #F2EEEB;
+    color: #223459;
+
+
+  
 }
 nav {
     background-color: #223459;
@@ -25,4 +29,41 @@ nav > ul > li > a {
 }
 nav > ul > li > a:hover {
     color: #E8D299;
+}
+h1 {
+    text-align: center;
+}
+#form-wrapper {
+    display: flex;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+    background-color: #BFB6AE;
+    padding: 20px;
+    border: #223459 2px solid;
+}
+#result-wrapper {
+    background-color: #BFB6AE;
+    text-align: center;
+    padding: 20px;
+}
+.result-paragraph {
+    font-size: 1.5rem;
+    color: #72A6B4;
+    font-weight: bolder;
+    background-color: #223459;
+    width: 30%;
+    margin: auto;
+    
+}
+#rules-wrapper {
+    background-color: #BFB6AE;
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: 10px;
 }

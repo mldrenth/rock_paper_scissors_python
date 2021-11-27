@@ -1,11 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
-
-<p>{{ player_1.name }}'s choice was {{ player_1.choice }}.</p>
-<p>{{ player_2.name }}'s choice was {{ player_2.choice }}.</p>
+<div id="result-wrapper">
+<p><strong>{{ player_1.name }}'s</strong> choice was <strong>{{ player_1.choice }}</strong>.</p>
+<p><strong>{{ player_2.name }}'s</strong> choice was <strong>{{ player_2.choice }}</strong>.</p>
 {% if winner == None %}
-<p>It's a draw.</p>
+<p class="result-paragraph">It's a draw.</p>
 {% else %}
-<p>{{ winner.name }} wins by playing {{ winner.choice }}!</p>
+<p class="result-paragraph">{{ winner.name }} wins by playing {{ winner.choice }}!</p>
+</div>
 {% endif %}
 {% endblock content %}
