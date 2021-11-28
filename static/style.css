@@ -1,12 +1,12 @@
 body {
     background-color: #F2EEEB;
-    color: #223459;
+    color:#2e2a22
 
 
   
 }
 nav {
-    background-color: #223459;
+    background-color: #BFB6AE;
    
 }
 
@@ -20,15 +20,15 @@ nav > ul {
 }
 
 nav > ul > li > a {
-    background-color:   #72A6B4;
+    background-color:   #F2EEEB;
     padding: 10px;
     text-decoration: none;
-    color: #223459;
+    color: #2e2a22;
     text-transform: uppercase
     
 }
 nav > ul > li > a:hover {
-    color: #E8D299;
+    color: #972521
 }
 h1 {
     text-align: center;
@@ -44,7 +44,9 @@ form {
     gap: 10px;
     background-color: #BFB6AE;
     padding: 20px;
-    border: #223459 2px solid;
+    border: #2e2a22 2px solid;
+    grid-area: content;
+    height: 30%
 }
 #result-wrapper {
     background-color: #BFB6AE;
@@ -53,9 +55,9 @@ form {
 }
 .result-paragraph {
     font-size: 1.5rem;
-    color: #72A6B4;
+    color: #972521;
     font-weight: bolder;
-    background-color: #223459;
+    background-color: #F2EEEB;
     width: 30%;
     margin: auto;
     
@@ -64,6 +66,54 @@ form {
     background-color: #BFB6AE;
     width: 70%;
     display: block;
-    margin: auto;
+    margin: 20px;
     padding: 10px;
+    border-radius: 10px;
+    grid-area: content;
 }
+
+
+#rock {
+    background-image: url("https://images.unsplash.com/photo-1559916776-b4023ef71ecc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    
+  
+
+}
+#paper {
+    background-image: url("https://images.unsplash.com/photo-1560560011-ea70ae062668?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1180&q=80");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+}
+
+#scissors {
+    background-image: url("https://images.unsplash.com/photo-1574858818846-886b8380713b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2960&q=80");
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+
+}
+
+aside {
+    margin: 5px;
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+
+
+
+}
+
+main {
+    display: grid;
+    grid-template-areas: 
+    'aside content';
+    grid-template-columns: 1fr 19fr;
+}
+
+
